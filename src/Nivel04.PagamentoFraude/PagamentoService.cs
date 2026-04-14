@@ -1,13 +1,6 @@
 namespace Nivel04.PagamentoFraude;
 
-// NIVEL 4 - SO AS REGRAS DE NEGOCIO. VOCE ESCREVE OS TESTES COM MOQ E O CÓDIGO.
-//
-// Leia o arquivo REGRAS-DE-NEGOCIO.md para entender o que deve ser implementado.
-//
-// As interfaces IGatewayPagamento e IDetectorFraude já foram fornecidas.
-// Nos testes, você vai mockar essas dependências com Moq.
-//
-// Para rodar: dotnet test tests/Nivel04.PagamentoFraude.Tests
+// GABARITO - Nivel 4: Processamento de Pagamento com Detecção de Fraude
 
 public class PagamentoService
 {
@@ -20,6 +13,18 @@ public class PagamentoService
         _detectorFraude = detectorFraude;
     }
 
-    // TODO: implemente os métodos de pagamento seguindo as regras de negócio
-    // Dica: comece escrevendo os testes com Mock e deixe a implementação guiar você
+    public ResultadoPagamento Pagar(string cartao, decimal valor)
+    {
+        if (string.IsNullOrWhiteSpace(cartao))
+            throw new ArgumentException("O número do cartão não pode ser vazio.", nameof(cartao));
+
+        if (valor <= 0)
+            throw new ArgumentException("O valor do pagamento deve ser maior que zero.", nameof(valor));
+
+        // Sempre consulta o detector de fraude antes do gateway
+        if (_detectorFraude.EhSuspeito(cartao, valor))
+            return new ResultadoPagamento(false, "Transação bloqueada por suspeita de fraude.");
+
+        return _gateway.Processar(cartao, valor);
+    }
 }

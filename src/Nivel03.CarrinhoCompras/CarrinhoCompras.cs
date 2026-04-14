@@ -1,20 +1,62 @@
 namespace Nivel03.CarrinhoCompras;
 
-// NIVEL 3 - SO AS REGRAS DE NEGOCIO. VOCE ESCREVE OS TESTES E O CÓDIGO.
-//
-// Leia o arquivo REGRAS-DE-NEGOCIO.md para entender o que deve ser implementado.
-//
-// As classes Produto e as Exceptions já foram fornecidas para facilitar o início.
-// Você deve:
-//   1. Escrever os testes em tests/Nivel03.CarrinhoCompras.Tests/CarrinhoComprasTests.cs
-//   2. Implementar esta classe para que os testes passem
-//
-// Siga o ciclo: RED (teste falha) → GREEN (implementação mínima) → REFACTOR
-//
-// Para rodar: dotnet test tests/Nivel03.CarrinhoCompras.Tests
+// GABARITO - Nivel 3: Carrinho de Compras
 
 public class CarrinhoCompras
 {
-    // TODO: implemente o carrinho de compras seguindo as regras de negócio
-    // Dica: comece pelos testes mais simples (adicionar um item, calcular total)
+    private readonly Dictionary<string, (Produto Produto, int Quantidade)> _itens = new();
+    private bool _cupomAplicado = false;
+
+    private static readonly Dictionary<string, decimal> Cupons = new()
+    {
+        ["FIAP10"] = 10m,
+        ["FIAP20"] = 20m,
+    };
+
+    public IReadOnlyList<(Produto Produto, int Quantidade)> Itens =>
+        _itens.Values.ToList().AsReadOnly();
+
+    public void Adicionar(Produto produto, int quantidade)
+    {
+        if (quantidade <= 0)
+            throw new ProdutoInvalidoException("A quantidade deve ser maior que zero.");
+
+        if (produto.Preco < 0)
+            throw new ProdutoInvalidoException("O preço do produto não pode ser negativo.");
+
+        if (_itens.TryGetValue(produto.Id, out var existente))
+            _itens[produto.Id] = (produto, existente.Quantidade + quantidade);
+        else
+            _itens[produto.Id] = (produto, quantidade);
+    }
+
+    public void Remover(string produtoId)
+    {
+        _itens.Remove(produtoId);
+    }
+
+    public decimal CalcularTotal()
+    {
+        return _itens.Values.Sum(i => i.Produto.Preco * i.Quantidade);
+    }
+
+    public decimal CalcularTotalComDesconto(decimal percentualDesconto)
+    {
+        if (percentualDesconto < 0 || percentualDesconto > 100)
+            throw new DescontoInvalidoException("O percentual de desconto deve ser entre 0 e 100.");
+
+        return CalcularTotal() * (1 - percentualDesconto / 100);
+    }
+
+    public decimal AplicarCupom(string cupom)
+    {
+        if (_cupomAplicado)
+            throw new CupomInvalidoException(cupom);
+
+        if (!Cupons.TryGetValue(cupom, out var desconto))
+            throw new CupomInvalidoException(cupom);
+
+        _cupomAplicado = true;
+        return CalcularTotalComDesconto(desconto);
+    }
 }
