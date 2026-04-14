@@ -61,7 +61,7 @@ public class CpfValidatorTests
     [Theory]
     [InlineData("111.222.333-44")]
     [InlineData("123.456.789-00")]
-    [InlineData("987.654.321-00")]
+    [InlineData("987.654.321-11")]
     public void IsValid_CpfComDigitoVerificadorErrado_RetornaFalso(string cpf)
     {
         _validator.IsValid(cpf).Should().BeFalse();
@@ -71,9 +71,9 @@ public class CpfValidatorTests
 
     [Theory]
     [InlineData("529.982.247-25")]   // formato com pontuação
-    [InlineData("52998224725")]      // formato sem pontuação
+    [InlineData("52998224725")]      // formato sem pontuação (mesmo CPF anterior)
     [InlineData("123.456.789-09")]
-    [InlineData("046.279.226-17")]
+    [InlineData("111.444.777-35")]
     public void IsValid_CpfValido_RetornaVerdadeiro(string cpf)
     {
         _validator.IsValid(cpf).Should().BeTrue();
