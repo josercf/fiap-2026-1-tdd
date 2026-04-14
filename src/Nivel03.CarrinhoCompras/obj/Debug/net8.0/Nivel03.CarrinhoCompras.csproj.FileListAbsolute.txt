@@ -1,0 +1,12 @@
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/bin/Debug/net8.0/Nivel03.CarrinhoCompras.deps.json
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/bin/Debug/net8.0/Nivel03.CarrinhoCompras.dll
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/bin/Debug/net8.0/Nivel03.CarrinhoCompras.pdb
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/obj/Debug/net8.0/Nivel03.CarrinhoCompras.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/obj/Debug/net8.0/Nivel03.CarrinhoCompras.AssemblyInfoInputs.cache
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/obj/Debug/net8.0/Nivel03.CarrinhoCompras.AssemblyInfo.cs
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/obj/Debug/net8.0/Nivel03.CarrinhoCompras.csproj.CoreCompileInputs.cache
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/obj/Debug/net8.0/Nivel03.CarrinhoCompras.sourcelink.json
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/obj/Debug/net8.0/Nivel03.CarrinhoCompras.dll
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/obj/Debug/net8.0/refint/Nivel03.CarrinhoCompras.dll
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/obj/Debug/net8.0/Nivel03.CarrinhoCompras.pdb
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel03.CarrinhoCompras/obj/Debug/net8.0/ref/Nivel03.CarrinhoCompras.dll

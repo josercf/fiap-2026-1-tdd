@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Nivel01.Calculadora/Nivel01.Calculadora.csproj" />
+    <Project Path="src/Nivel02.ValidacaoCpf/Nivel02.ValidacaoCpf.csproj" />
+    <Project Path="src/Nivel03.CarrinhoCompras/Nivel03.CarrinhoCompras.csproj" />
+    <Project Path="src/Nivel04.PagamentoFraude/Nivel04.PagamentoFraude.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Nivel01.Calculadora.Tests/Nivel01.Calculadora.Tests.csproj" />
+    <Project Path="tests/Nivel02.ValidacaoCpf.Tests/Nivel02.ValidacaoCpf.Tests.csproj" />
+    <Project Path="tests/Nivel03.CarrinhoCompras.Tests/Nivel03.CarrinhoCompras.Tests.csproj" />
+    <Project Path="tests/Nivel04.PagamentoFraude.Tests/Nivel04.PagamentoFraude.Tests.csproj" />
+  </Folder>
+</Solution>

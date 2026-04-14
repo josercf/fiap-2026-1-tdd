@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Nivel03.CarrinhoCompras/1.0.0": {
+        "runtime": {
+          "Nivel03.CarrinhoCompras.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Nivel03.CarrinhoCompras/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

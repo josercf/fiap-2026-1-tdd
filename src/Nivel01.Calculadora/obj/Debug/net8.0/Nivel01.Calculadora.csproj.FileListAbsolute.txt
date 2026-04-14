@@ -1,0 +1,12 @@
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/bin/Debug/net8.0/Nivel01.Calculadora.deps.json
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/bin/Debug/net8.0/Nivel01.Calculadora.dll
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/bin/Debug/net8.0/Nivel01.Calculadora.pdb
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/obj/Debug/net8.0/Nivel01.Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/obj/Debug/net8.0/Nivel01.Calculadora.AssemblyInfoInputs.cache
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/obj/Debug/net8.0/Nivel01.Calculadora.AssemblyInfo.cs
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/obj/Debug/net8.0/Nivel01.Calculadora.csproj.CoreCompileInputs.cache
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/obj/Debug/net8.0/Nivel01.Calculadora.sourcelink.json
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/obj/Debug/net8.0/Nivel01.Calculadora.dll
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/obj/Debug/net8.0/refint/Nivel01.Calculadora.dll
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/obj/Debug/net8.0/Nivel01.Calculadora.pdb
+/Users/joseromualdocostafilho/Projects/FIAP/fiap-2026-1-tdd/src/Nivel01.Calculadora/obj/Debug/net8.0/ref/Nivel01.Calculadora.dll

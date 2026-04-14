@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Nivel04.PagamentoFraude/1.0.0": {
+        "runtime": {
+          "Nivel04.PagamentoFraude.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Nivel04.PagamentoFraude/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
